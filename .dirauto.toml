@@ -1,0 +1,10 @@
+# Dirauto configuration file
+# Environment variables to set when entering this directory
+[env]
+DIRAUTO_VAR = "dirauto initialized successfully"
+
+# Actions to perform when entering/leaving this directory
+[actions]
+on_enter = ["source .venv/bin/activate"]
+
+on_leave = ["deactivate"]

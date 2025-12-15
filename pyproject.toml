@@ -1,0 +1,11 @@
+[project]
+name = "autoscan"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chardet>=5.2.0",
+    "pydantic>=2.12.5",
+    "tqdm>=4.67.1",
+]
