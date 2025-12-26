@@ -1,0 +1,65 @@
+[[targets]]
+meta = "IT"
+name = "DW"
+ip = "28.5.12.4"
+needed_port = [443]
+urls = ["https://ae.com"]
+
+[[targets]]
+meta = "IT"
+name = "ZE"
+ip = "18.5.192.9"
+needed_port = [443]
+urls = ["https://cd.cd:443"]
+
+[[targets]]
+meta = "IT"
+name = "vpn"
+ip = "1.114.21.14"
+needed_port = [443]
+urls = ["https://vd.com"]
+skip = true
+
+[[targets]]
+meta = "IT"
+name = "SM"
+ip = "21.25.19.8"
+needed_port = [80, 443, 8068]
+urls = ["http://cd", "http://asd:8268/", "https://2dd:443"]
+
+
+[[targets]]
+meta = "TR"
+name = "WD"
+ip = "3.13.10.191"
+needed_port = [80]
+urls = ["http://d.cn"]
+
+
+[[targets]]
+meta = "AS"
+name = "RR"
+ip = "3.137.20.10"
+needed_port = [
+    80,
+    443,
+    10020,
+    10070,
+    9610,
+    19081,
+    28080,
+    10040,
+    10033,
+    40080,
+    10010,
+    10011,
+    18082,
+    28090,
+    10015,
+    13000,
+    10013,
+    19086,
+    10050,
+    53334,
+]
+urls = ["https://site/", "https://site/pss/"]
