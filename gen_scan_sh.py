@@ -38,14 +38,14 @@ class ScanTarget(BaseModel):
 
     def gen_nmap(self):
         print(
-            f"nmap -sS -Pn -p- -T4 --max-retries 4 --min-rate 100 --defeat-rst-ratelimit --open {self.ip} -oN {self.ip}.nmap"
+            f"nmap -sS -Pn -p- -T4 --max-retries 4 --min-rate 100 --defeat-rst-ratelimit --open {self.ip} -oN {self.base_dir}/{self.ip}.nmap"
         )
 
     def gen_dirsearch(self):
         for url in self.urls:
             filename = safe_url_name(url)
             print(
-                f"dirsearch -u {url} -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e php,asp,aspx,jsp,html,zip,rar,7z,txt --random-agent --format=csv -o {filename}.csv -t 40 -r 2 --include-status=200,300-308,401,403,500 --timeout=5"
+                f"dirsearch -u {url} -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -e php,asp,aspx,jsp,html,zip,rar,7z,txt --random-agent --format=csv -o {self.base_dir}/{filename}.csv -t 40 -r 2 --include-status=200,300-308,401,403,500 --timeout=5"
             )
 
     def gen_script(self):
