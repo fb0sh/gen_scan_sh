@@ -25,5 +25,6 @@ ignore = [
     "*.iml",
     ".gitignore",
     "LICENSE",
+    "output/",
 ]
 ignore_file = "./.gitignore"
